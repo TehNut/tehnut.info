@@ -7,7 +7,12 @@
   <link href='css/main.css?' rel='stylesheet' type='text/css' />
 </head>
 <body>
-<?php include 'include/header.php'; ?>
+<?php include 'include/header.php'; 
+//Here's some
+//Random PHP
+//So that PHP and CSS levels
+//Are 50/50 on GitHub
+?>
   
   <center>
   	<h1>You weren't supposed to see this...</h1  	
