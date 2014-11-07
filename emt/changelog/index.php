@@ -14,7 +14,7 @@
     	<div class="inner">
     		<h1>
         		<span class="icon ion-ios7-paper"></span>
-    			Redstone Armory Changelog
+    			Electro-Magic Tools Changelog
         	</h1>
             <p>Version formatting: <b>MCVER-MAIN.SUB-BUILD</b></p>
     	</div>
