@@ -30,9 +30,33 @@
 
     <div class="box">
       <div class="inner">
+        <a href="http://tehnut.info/emt/"><span class="icon ion-android-download"></span>
+        <h2>Electro-Magic Tools</h2></a>
+        <p>Ever thought of mixing Magic and Electricity?</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container">
+    <div class="box">
+      <div class="inner">
         <a href="http://tehnut.info/nc/"><span class="icon ion-code-working"></span>
         <h2>Nuclear Cubes</h2></a>
-        <p>Un-small nuclear boxes. Currently in progress.</p>
+	    <p>The future GT of Big Reactors.</p>
+      </div>
+    </div>
+    
+    <div class="box">
+      <div class="inner">
+
+      </div>
+    </div>
+    
+    <div class="box">
+      <div class="inner">
+        <a href="https://github.com/TehNut/LoaderList"><span class="icon ion-android-download"></span>
+        <h2>LoaderList</h2></a>
+	    <p>Tracking of all forced chunk activity.</p>
       </div>
     </div>
   </div>
