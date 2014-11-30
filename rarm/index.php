@@ -14,7 +14,7 @@
   <div class="container">
     <div class="box">
       <div class="inner">
-        <a href="https://github.com/CoFH" target="new"><span class="icon ion-android-settings"></span>
+        <a href="https://github.com/CoFH" target="_blank"><span class="icon ion-android-settings"></span>
         <h2>Common API</h2></a>
 	      <p>Redstone Armory is built off CoFH for maximum compatiblity.</p>
       </div>
@@ -30,7 +30,7 @@
 
     <div class="box">
       <div class="inner">
-        <a href="https://github.com/TehNut/RedstoneArmory" target="new"><span class="icon ion-social-github"></span>
+        <a href="https://github.com/TehNut/RedstoneArmory" target="_blank"><span class="icon ion-social-github"></span>
         <h2>Open Source</h2></a>
         <p>Licensed under the &quot;Don't be a Jerk&quot; license. Do whatever you like!</p>
       </div>

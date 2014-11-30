@@ -14,7 +14,7 @@
   <div class="container">
     <div class="box">
       <div class="inner">
-        <a href="https://twitter.com/OfficialTehNut" target="new"><span class="icon ion-social-twitter"></span>
+        <a href="https://twitter.com/OfficialTehNut" target="_blank"><span class="icon ion-social-twitter"></span>
         <h2>Twitter</h2></a>
 	      <p>For when I occasionally tweet stuff.</p>
       </div>
@@ -22,7 +22,7 @@
 
     <div class="box">
       <div class="inner">
-        <a href="https://github.com/TehNut/" target="new"><span class="icon ion-social-github"></span>
+        <a href="https://github.com/TehNut/" target="_blank"><span class="icon ion-social-github"></span>
         <h2>GitHub</h2></a>
         <p>Everything I work on is open source. Here it all is.</p>
       </div>
@@ -30,7 +30,7 @@
 
     <div class="box">
       <div class="inner">
-        <a href="http://steamcommunity.com/profiles/76561198041871599" target="new"><span class="icon ion-steam"></span>
+        <a href="http://steamcommunity.com/profiles/76561198041871599" target="_blank"><span class="icon ion-steam"></span>
         <h2>Steam</h2></a>
         <p>I like playing games. Feel free to add me :D</p>
       </div>

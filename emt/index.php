@@ -30,7 +30,7 @@
 
     <div class="box">
       <div class="inner">
-        <a href="https://github.com/Tombenpotter/Electro-Magic-Tools" target="new"><span class="icon ion-social-github"></span>
+        <a href="https://github.com/Tombenpotter/Electro-Magic-Tools" target="_blank"><span class="icon ion-social-github"></span>
         <h2>Open Source</h2></a>
         <p>Licensed under the GNU General Public License.</p>
       </div>

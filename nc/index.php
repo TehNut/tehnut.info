@@ -30,7 +30,7 @@
 
     <div class="box">
       <div class="inner">
-        <a href="https://github.com/TehNut/NuclearCubes" target="new"><span class="icon ion-social-github"></span>
+        <a href="https://github.com/TehNut/NuclearCubes" target="_blank"><span class="icon ion-social-github"></span>
         <h2>Open Source</h2></a>
         <p>Licensed under the &quot;Don't be a Jerk&quot; license. Do whatever you like!</p>
       </div>

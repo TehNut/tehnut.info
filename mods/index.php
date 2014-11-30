@@ -22,7 +22,7 @@
 
     <div class="box">
       <div class="inner">
-        <a href="https://github.com/TehNut/LaunchGui" target="new"><span class="icon ion-android-download"></span>
+        <a href="https://github.com/TehNut/LaunchGui" target="_blank"><span class="icon ion-android-download"></span>
         <h2>LaunchGui</h2></a>
         <p>Notify your players.</p>
       </div>
