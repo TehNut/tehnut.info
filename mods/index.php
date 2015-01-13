@@ -40,15 +40,17 @@
   <div class="container">
     <div class="box">
       <div class="inner">
-        <a href="http://tehnut.info/nc/"><span class="icon ion-code-working"></span>
-        <h2>Nuclear Cubes</h2></a>
-	    <p>The future GT of Big Reactors.</p>
+        <a href="https://github.com/TehNut/ResourcefulCrops"><span class="icon ion-code-working"></span>
+        <h2>ResourcefulCrops</h2></a>
+	    <p>Plants for all your resourcey needs.</p>
       </div>
     </div>
     
     <div class="box">
       <div class="inner">
-
+        <a href="https://github.com/TehNut/SunStroke"><span class="icon ion-android-download"></span>
+        <h2>SunStroke</h2></a>
+	    <p>Bring out your inner hermit.</p>
       </div>
     </div>
     
