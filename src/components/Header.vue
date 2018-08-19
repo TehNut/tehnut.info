@@ -1,7 +1,9 @@
 <template>
   <div>
     <div id="header">
-      <router-link to="/"><h1 class="name text-light">TehNut</h1></router-link>
+      <div class="name-container">
+        <router-link to="/"><h1 class="name text-light">TehNut</h1></router-link>
+      </div>
       <p class="text">A {{getAge()}} year old gravedigger from California.</p>
       <img src="../assets/avatar.png" class="avatar">
     </div>
@@ -36,7 +38,6 @@
   }
 
   #header {
-    margin-top: -27px;
     text-align: center;
     height: 350px;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../assets/header.png");
@@ -46,7 +47,10 @@
 
   .name {
     font-size: 40px;
-    padding-top: 140px;
+  }
+
+  .name-container {
+    padding-top: 115px;
   }
 
   .avatar {
