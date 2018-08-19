@@ -2,7 +2,7 @@
   <div id="navigation" class="foreground">
       <div class="inner left">
         <ul class="listing">
-          <li><router-link to="/about" class="text-dark">About</router-link></li>
+          <li><router-link to="/" class="text-dark">Home</router-link></li>
           <!--<li><router-link to="/playground" class="text-dark">Playground</router-link></li>-->
         </ul>
       </div>
@@ -33,13 +33,13 @@
   @import '../assets/global.scss';
 
   #navigation {
-    height: 50px;
+    min-height: 50px;
     margin-bottom: 125px;
     text-align: center;
   }
 
   .inner {
-    width: 50%;
+    width: 45%;
   }
 
   .left {
