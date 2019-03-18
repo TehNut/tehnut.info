@@ -1,28 +1,31 @@
 <template>
-    <div id="footer" class="foreground">
-      <p class="text-dark">
-        © Nicholas "TehNut" Ignoffo {{new Date().getFullYear()}}
-        <br>
-        Header source: <a class="text" href="https://anilist.co/anime/21202/Kono-Subarashii-Sekai-ni-Shukufuku-wo/">Kono Subarashii Sekai ni Shukufuku wo!</a>
-        <br>
-        Avatar source: 238010 ( ͡° ͜ʖ ͡°)
-      </p>
-    </div>
+  <div class="footer">
+    <p class="text-dark">
+      © Nicholas "TehNut" Ignoffo {{new Date().getFullYear()}}
+      <br>
+      Header source: <a style="color:rgb(var(--color-text))" href="https://anilist.co/anime/21202" target="_blank">Kono Subarashii Sekai ni Shukufuku wo!</a>
+      <br>
+      Avatar source: 238010 ( ͡° ͜ʖ ͡°)
+    </p>
+    <span style="position:fixed;bottom:-50px">I don't know how to get the footer to sit at the bottom<br>don't @me</span>
+  </div>
 </template>
 
 <script>
-    export default {
-        name: "Footer"
-    }
+  export default {
+    name: "Footer"
+  }
 </script>
 
-<style lang="scss" scoped>
-  @import '../assets/global.scss';
-
-  #footer {
-    height: 50px;
+<style scoped>
+  .footer {
+    border-top: rgb(var(--color-accent)) solid 2px;
+    background-color: rgb(var(--color-foreground));
+    width: 100%;
+    height: 100%;
+    position: relative;
+    bottom: 0;
     line-height: 15px;
     font-size: x-small;
-    width: 100%;
   }
 </style>

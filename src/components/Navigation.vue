@@ -1,79 +1,106 @@
 <template>
-  <div id="navigation" class="foreground">
-      <div class="inner left">
-        <ul class="listing">
-          <li><router-link to="/" class="text-dark">Home</router-link></li>
-          <!--<li><router-link to="/playground" class="text-dark">Playground</router-link></li>-->
-        </ul>
-      </div>
-
-      <div class="inner right">
-        <ul class="listing">
-          <!--<li><router-link to="/projects" class="text-dark">Projects</router-link></li>-->
-          <li><a href="https://tehnut.info/jenkins/" class="text-dark">Jenkins</a></li>
-          <li><a href="https://tehnut.info/maven/" class="text-dark">Maven</a></li>
-          <li><a href="https://github.com/TehNut" class="text-dark">Github</a></li>
-        </ul>
-      </div>
+  <div id="navigation">
+    <div class="navigation nav-left">
+      <a v-for="link in leftLinks" class="link" :href="link.url" :target="`${link.route ? '' : '_blank'}`" v-on:click="onUrlClick(link, $event)">{{ link.title }}</a>
+    </div>
+    <div id="center-spacer"></div>
+    <div class="navigation nav-right">
+      <a v-for="link in rightLinks" class="link" :href="link.url" :target="`${link.route ? '' : '_blank'}`" v-on:click="onUrlClick(link, $event)">{{ link.title }}</a>
+    </div>
   </div>
 </template>
 
 <script>
-  import NavigationHamburger from "./NavigationHamburger";
-
   export default {
     name: "Navigation",
-    components: {
-      NavigationHamburger
+    data() {
+      return {
+        leftLinks: [
+          {
+            title: "Home",
+            url: "/",
+            route: true
+          }
+        ],
+        rightLinks: [
+          {
+            title: "Maven",
+            url: "https://tehnut.info/maven/"
+          },
+          {
+            title: "Jenkins",
+            url: "https://tehnut.info/jenkins/"
+          },
+          {
+            title: "Github",
+            url: "https://github.com/TehNut/"
+          }
+        ]
+      }
+    },
+    methods: {
+      onUrlClick(link, event) {
+        if (link.route) {
+          event.preventDefault();
+          this.$router.push(link.url);
+        }
+      }
     }
   }
 </script>
 
-<style lang="scss" scoped>
-  @import '../assets/global.scss';
-
+<style scoped>
   #navigation {
-    min-height: 50px;
-    margin-bottom: 125px;
-    text-align: center;
-  }
-
-  .inner {
-    width: 45%;
-  }
-
-  .left {
-    float: left;
-  }
-
-  .right {
-    float: right;
-  }
-
-  ul {
-    list-style-type: none;
-    overflow: hidden;
+    height: 50px;
+    width: 100%;
+    background-color: rgb(var(--color-foreground));
     display: flex;
+    flex-flow: row;
     justify-content: center;
   }
 
-  li {
-    width: 100px;
+  .navigation {
+    width: 40%;
+    display: flex;
+    justify-content: flex-start;
   }
 
-  li a {
-    display: block;
-    text-align: center;
-    padding: 16px;
-    -webkit-transition: background-color 0.3s;
-    -moz-transition: background-color 0.3s;
-    -ms-transition: background-color 0.3s;
-    -o-transition: background-color 0.3s;
-    transition: background-color 0.3s;
-    background-color: $fg-color;
+  .nav-left {
+    flex-flow: row-reverse;
   }
 
-  li a:hover {
-    background-color: $fg-color-dark;
+  #center-spacer {
+    width: 256px;
+  }
+
+  .nav-right {
+    flex-flow: row;
+  }
+
+  .link {
+    color: rgb(var(--color-text));
+    padding: 0 10px;
+    height: 100%;
+    line-height: 50px;
+    transition: .3s;
+  }
+
+  .link:hover {
+    background-color: rgb(var(--color-foreground-grey));
+  }
+
+  @media screen and (max-width: 750px) {
+    #navigation {
+      height: auto;
+    }
+
+    .navigation {
+      flex-wrap: wrap;
+      flex-flow: column;
+    }
+
+    .link {
+      height: 50px;
+    }
   }
 </style>

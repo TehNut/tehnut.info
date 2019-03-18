@@ -1,11 +1,11 @@
 <template>
   <div id="app">
-    <Header></Header>
-    <Navigation></Navigation>
+    <Header/>
+    <Navigation/>
     <div class="content">
       <router-view/>
     </div>
-    <Footer></Footer>
+    <Footer/>
   </div>
 </template>
 
@@ -17,39 +17,44 @@
   export default {
     name: 'App',
     components: {
-      Footer,
+      Header,
       Navigation,
-      Header
+      Footer
     }
   }
 </script>
 
-<style lang="scss">
-  @import './assets/global.scss';
+<style>
+  @import './assets/main.css';
 
   body {
     margin: 0;
-    background-color: $bg-color;
+    background-color: rgb(var(--color-background));
     width: 100%;
   }
 
   a {
     text-decoration: none;
+    color: rgb(var(--color-accent))
   }
 
   #app {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    color: rgb(var(--color-text));
     text-align: center;
-    position: relative;
-
-    color: $dark-text-color;
   }
 
   .content {
     width: 60%;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  @media screen and (max-width: 750px) {
+    .content {
+      width: 95%;
+    }
   }
 </style>

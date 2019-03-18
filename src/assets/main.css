@@ -1,0 +1,69 @@
+:root {
+  /* Theme modifiable */
+  --color-background: 39, 44, 56;
+  --color-foreground: 31, 35, 45;
+  --color-foreground-grey: 25, 29, 38;
+  --color-foreground-grey-dark: 16, 20, 25;
+  --color-foreground-blue: 25, 29, 38;
+  --color-foreground-blue-dark: 19, 23, 29;
+  --color-text: 159, 173, 189;
+  --color-text-light: 129, 140, 153;
+  --color-text-lighter: 133, 150, 165;
+  /* No theming */
+  --color-overlay: 31, 38, 49;
+  --color-text-bright: 237, 241, 245;
+  /* Changeable option */
+  --color-accent: 61, 180, 242;
+}
+
+body {
+  background-color: rgb(var(--color-background));
+  font-size: 16px;
+  color: rgb(var(--color-text));
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scrollbar-color: rgb(var(--color-accent)) rgb(var(--color-foreground));
+  scrollbar-width: thin;
+}
+
+.listing {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.background {
+  background-color: rgb(var(--color-background));
+}
+
+.foreground {
+  background-color: rgb(var(--color-foreground));
+}
+
+.foreground-dark {
+  background-color: rgb(var(--color-foreground-grey));
+}
+
+.text {
+  color: rgb(var(--color-text-bright));
+}
+
+.text-dark {
+  color: rgb(var(--color-text-light));
+}
+
+.text-light {
+  color: rgb(var(--color-text-bright));
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(var(--color-foreground));
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(var(--color-accent));
+}
