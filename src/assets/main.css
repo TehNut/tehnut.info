@@ -21,7 +21,6 @@ body {
   font-size: 16px;
   color: rgb(var(--color-text));
   overflow-x: hidden;
-  overflow-y: scroll;
   scrollbar-color: rgb(var(--color-accent)) rgb(var(--color-foreground));
   scrollbar-width: thin;
 }
@@ -54,6 +53,10 @@ body {
 
 .text-light {
   color: rgb(var(--color-text-bright));
+}
+
+.highlight {
+  color: rgb(var(--color-accent));
 }
 
 ::-webkit-scrollbar {

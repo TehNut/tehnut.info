@@ -7,7 +7,6 @@
       <br>
       Avatar source: 238010 ( ͡° ͜ʖ ͡°)
     </p>
-    <span style="position:fixed;bottom:-50px">I don't know how to get the footer to sit at the bottom<br>don't @me</span>
   </div>
 </template>
 
@@ -22,8 +21,7 @@
     border-top: rgb(var(--color-accent)) solid 2px;
     background-color: rgb(var(--color-foreground));
     width: 100%;
-    height: 100%;
-    position: relative;
+    position: absolute;
     bottom: 0;
     line-height: 15px;
     font-size: x-small;

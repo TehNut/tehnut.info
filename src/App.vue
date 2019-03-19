@@ -1,9 +1,11 @@
 <template>
   <div id="app">
-    <Header/>
-    <Navigation/>
-    <div class="content">
-      <router-view/>
+    <div class="not-footer">
+      <Header/>
+      <Navigation/>
+      <div class="content">
+        <router-view/>
+      </div>
     </div>
     <Footer/>
   </div>
@@ -27,10 +29,17 @@
 <style>
   @import './assets/main.css';
 
+  html {
+    height: 100%;
+  }
+
   body {
     margin: 0;
     background-color: rgb(var(--color-background));
     width: 100%;
+    position: relative;
+    padding-bottom: 70px;
+    min-height: calc(100% - 70px);
   }
 
   a {
@@ -44,6 +53,10 @@
     -moz-osx-font-smoothing: grayscale;
     color: rgb(var(--color-text));
     text-align: center;
+  }
+
+  .not-footer {
+    margin: 0 auto;
   }
 
   .content {
