@@ -18,8 +18,12 @@
     <div class="section bio">
       <h2>About Me</h2>
       <div class="section-base">
-        <p>My name is Nick and I'm a self taught developer. I started programming in 2014 by writing mods for the game Minecraft.
-          I have since expanded into other areas such as Discord bots and some small web-based applications.</p>
+        <p>My name is Nick and I'm a self taught developer. My first programming language was Java and I started programming
+          in 2014 by writing mods for the game Minecraft.</p>
+
+        <p>Since then, I have amassed over <span class="highlight">100 million</span> downloads across
+          the projects I own as well as the ones I am a major contributor to. Recently I have been expanding my horizons
+          by working on completely different types of projects like Discord bots and web extensions.</p>
 
         <p>The majority of my time is spent watching anime or reading manga. I spend an absurd amount of money on anime related
           merchandise including figurines, clothing, and physical editions of anime and manga.</p>
@@ -70,11 +74,24 @@
             ]
           },
           {
-            title: "Personal Sites",
+            title: "Notable Projects",
             links: [
               {
-                title: "waifu.me",
-                url: "https://waifu.me"
+                title: "AniMouto",
+                url: "https://www.animouto.moe/"
+              },
+              {
+                title: "AniSchedule",
+                url: "https://github.com/TehNut/AniSchedule"
+              }
+            ]
+          },
+          {
+            title: "Other",
+            links: [
+              {
+                title: "CurseForge",
+                url: "https://minecraft.curseforge.com/members/TehNut"
               },
               {
                 title: "yuri.dance",
@@ -109,13 +126,14 @@
   .section-base {
     background-color: rgb(var(--color-foreground));
     border-radius: 5px;
-    padding: 5px 15px;
+    padding: 5px 20px;
     line-height: 20px;
     text-align: left;
   }
 
   .link-entry {
     list-style: none;
+    font-size: 14px;
     margin-left: -20px;
   }
 
